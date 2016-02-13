@@ -15,6 +15,8 @@ class waveguideClass:
     w = 1   # width (units?)
     L = 1   # thickness (units?)
     H = 1000 # external magnetic field (units)
+    nMax = 5 # highest order of width modes
+    qMax = 5 # highest order of thickness modes
        
     
     
@@ -23,6 +25,11 @@ class waveguideClass:
         pass
 
     #TODO: create lists of available wave vecors Kq and Kn, calculate then in _init_ method
+
+    # calculate array of allowed width modes
+    def calcKq(self):
+        
+        return 1
     
     # available wave vectors
     def Kq(self,q):
